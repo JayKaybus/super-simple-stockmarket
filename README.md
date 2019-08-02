@@ -22,8 +22,8 @@ DAO:(dao)
 Created for managing the data access layer logic persistance in a separate layer for future use.
 But, currently all data are stored only in InMemory in this layer.
 
-Unit Tests:(test)
-Unit tests cases for all service layer methods is created under this folder using SpringRunner 
+Unit Tests:(src/test)
+Unit tests cases for all service layer methods is created under the folder src/test using SpringRunner 
 
 Sample Tests API's: 
 Valid Input cases:

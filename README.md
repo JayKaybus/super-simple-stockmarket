@@ -1,8 +1,11 @@
 # super-simple-stockmarket
-#Features of the Project
+Features of the Project
+
 * Developed using Spring Boot and Java version 8.
 * Created REST API’s for the functionality mentioned in the assignment document.
-Once app is built and started, Open http://localhost:8080/stockmarket/test to see the message “Welcome to Simple Super Stock Mark App” for successful app launch. 
+  Once app is built and started, 
+  Open http://localhost:8080/stockmarket/test to see the message 
+  “Welcome to Simple Super Stock Mark App” for successful app launch. 
 
 Technical Design and Solution
 Service oriented architecture(SOA) approach along with REST based service layer wrapper has been followed for this app to make the functional building blocks accessible over http protocol and to be independent of platforms and programming languages accessing it.
@@ -19,10 +22,10 @@ Created for managing the data access layer logic persistance in a separate layer
 But, currently all data are stored only in InMemory in this layer.
 
 Unit Tests:(test)
-Unit tests cases for all service layer methods is created under this folder.
+Unit tests cases for all service layer methods is created under this folder using SpringRunner 
 
-Tests: 
-Valid Input case
+Sample Tests API's: 
+Valid Input cases
 http://localhost:8080/stockmarket/calcDividendYield/TEA/10
 http://localhost:8080/stockmarket/calcPERatio/POP/10
 
@@ -40,7 +43,7 @@ http://localhost:8080/stockmarket/calcVolumeWtStockPrice/TEA
 http://localhost:8080/stockmarket/GBCEAllShareIndex
 
 
-Invalid input case
+Invalid input cases
 http://localhost:8080/stockmarket/calcDividendYield/TEAP/10
 http://localhost:8080/stockmarket/calcDividendYield/POP/0
 http://localhost:8080/stockmarket/calcDividendYield/POP/-10

@@ -7,8 +7,9 @@ Features of the Project
   Open http://localhost:8080/stockmarket/test to see the message 
   “Welcome to Simple Super Stock Mark App” for successful app launch. 
 
-Technical Design and Solution
-Service oriented architecture(SOA) approach along with REST based service layer wrapper has been followed for this app to make the functional building blocks accessible over http protocol and to be independent of platforms and programming languages accessing it.
+Technical Design and Solution:
+
+Service oriented architecture(SOA) approach along with REST based service layer wrapper design has been followed for this app to make the functional building blocks accessible over http protocol and to be independent of platforms and programming languages accessing it.
 
 RestController:(rest)
 All the functionality of the application mentioned in the document are exposed using RESTful API's 
@@ -25,12 +26,15 @@ Unit Tests:(test)
 Unit tests cases for all service layer methods is created under this folder using SpringRunner 
 
 Sample Tests API's: 
-Valid Input cases
+Valid Input cases:
+
 http://localhost:8080/stockmarket/calcDividendYield/TEA/10
 http://localhost:8080/stockmarket/calcPERatio/POP/10
 
-Method type - Post
+Method type - Post:
+
 http://localhost:8080/stockmarket/recordATrade
+
 Sample RequestBody : 
 {
 	"stockSymbol":"TEA",
@@ -43,7 +47,8 @@ http://localhost:8080/stockmarket/calcVolumeWtStockPrice/TEA
 http://localhost:8080/stockmarket/GBCEAllShareIndex
 
 
-Invalid input cases
+Invalid input cases:
+
 http://localhost:8080/stockmarket/calcDividendYield/TEAP/10
 http://localhost:8080/stockmarket/calcDividendYield/POP/0
 http://localhost:8080/stockmarket/calcDividendYield/POP/-10
